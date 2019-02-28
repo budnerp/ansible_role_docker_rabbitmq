@@ -1,0 +1,35 @@
+---
+- name: RABBITMQ - configure RabbitMQ 3.7 repository
+  yum:
+    name:
+    state: present
+  when: ansible_os_family == "RedHat" and ansible_distribution_major_version == "7"
+  register: rabbitmq_result
+  until: rabbitmq_result is success
+  retries: 3
+  delay: 5
+
+#- name: MySQL - install MySQL 5.7 server
+#  yum:
+#    name: mysql-community-server
+#    state: present
+#  register: mysql_install
+
+#- name: MySQL - upload MySQL 5.7 custom setting /etc/my.cnf
+#  template:
+#    src: etc/my.cnf.j2
+#    dest: /etc/my.cnf
+#    owner: root
+#    group: root
+#    mode: 0644
+#
+#- name: MySQL - enable and start MySQL 5.7 server
+#  systemd:
+#    name: mysqld
+#    enabled: yes
+#    state: started
+
+#  - debug:
+#      var: rabbitmq_result
+
+
