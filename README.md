@@ -1,12 +1,12 @@
 # Ansible role for RabbitMQ
-Ansible role for RabbitMQ 3.7
+Ansible role for RabbitMQ 3.7 for CentOS 7
 
 ## What's inside?
 1. Interesting RabbitMQ dirs and files: 
     ```
     ...
     ```
-2. Custom settings as per defaults/main.yml
+2. Custom settings as per `defaults/main.yml`
    
 ## Tested on
 
