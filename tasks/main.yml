@@ -1,13 +1,13 @@
 ---
-- name: RABBITMQ - configure RabbitMQ 3.7 repository
-  yum:
-    name:
-    state: present
-  when: ansible_os_family == "RedHat" and ansible_distribution_major_version == "7"
-  register: rabbitmq_result
-  until: rabbitmq_result is success
-  retries: 3
-  delay: 5
+#- name: RABBITMQ - configure RabbitMQ 3.7 repository
+#  yum:
+#    name:
+#    state: present
+#  when: ansible_os_family == "RedHat" and ansible_distribution_major_version == "7"
+#  register: rabbitmq_result
+#  until: rabbitmq_result is success
+#  retries: 3
+#  delay: 5
 
 #- name: MySQL - install MySQL 5.7 server
 #  yum:
