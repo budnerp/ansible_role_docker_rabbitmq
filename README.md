@@ -25,7 +25,8 @@ Ansible role for RabbitMQ 3.7
     ```
 
 ## Other links
-- 
+- RabbitMQ [http://www.rabbitmq.com/]()
+- RabbitMQ Server on GitHub [https://github.com/rabbitmq/rabbitmq-server]()
 
 ## TO DO
 -[ ] add dependencies 
